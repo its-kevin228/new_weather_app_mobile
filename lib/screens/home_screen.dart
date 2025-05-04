@@ -114,7 +114,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               fontSize: 25,
                             ),
                           ),
-                          Image.asset("assets/1.png"),
+                          getWeatherIcon( state.weather.weatherConditionCode!),
 
                           Center(
                             child: Text(
