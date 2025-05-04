@@ -1,10 +1,10 @@
-// ignore_for_file: depend_on_referenced_packages
-
+// ignore: depend_on_referenced_packages
 import 'package:bloc/bloc.dart';
-import 'package:cpurs/data/my_data.dart';
 import 'package:equatable/equatable.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:weather/weather.dart';
+
+import '../data/my_data.dart';
 
 part 'weather_bloc_event.dart';
 part 'weather_bloc_state.dart';
@@ -14,10 +14,7 @@ class WeatherBlocBloc extends Bloc<WeatherBlocEvent, WeatherBlocState> {
     on<FetchWeather>((event, emit) async {
       emit(WeatherBlocLoading());
       try {
-        WeatherFactory wf = WeatherFactory(
-          API_KEY,
-          language: Language.ENGLISH,
-        );
+        WeatherFactory wf = WeatherFactory(API_KEY, language: Language.ENGLISH);
 
         Weather weather = await wf.currentWeatherByLocation(
           event.position.latitude,
