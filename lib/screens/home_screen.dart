@@ -67,7 +67,7 @@ class HomeScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      "🗺️Camp-GP",
+                      "📍Camp-GP",
                       style: TextStyle(
                         fontWeight: FontWeight.w300,
                         color: Colors.white,
@@ -81,6 +81,164 @@ class HomeScreen extends StatelessWidget {
                         color: Colors.white,
                         fontSize: 25,
                       ),
+                    ),
+                    Image.asset("assets/1.png"),
+
+                    const Center(
+                      child: Text(
+                        "21°C",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 50,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                    const Center(
+                      child: Text(
+                        "Sunny",
+                        style: TextStyle(
+                          fontWeight: FontWeight.w500,
+                          fontSize: 20,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 5),
+                    const Center(
+                      child: Text(
+                        "Friday | 12:00 PM",
+                        style: TextStyle(
+                          fontWeight: FontWeight.w300,
+                          fontSize: 16,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 20),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Row(
+                          children: [
+                            Image.asset("assets/11.png", scale: 8),
+                            const SizedBox(width: 5),
+
+                            const Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "Humidity",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.w300,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                SizedBox(height: 3),
+                                Text(
+                                  "5:30 Am",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.w700,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                        Row(
+                          children: [
+                            Image.asset("assets/11.png", scale: 8),
+                            const SizedBox(width: 5),
+
+                            const Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "Humidity",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.w300,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                SizedBox(height: 3),
+                                Text(
+                                  "5:30 Am",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.w700,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 5),
+                      child: Divider(color: Colors.grey),
+                    ),
+
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Row(
+                          children: [
+                            Image.asset("assets/11.png", scale: 8),
+                            const SizedBox(width: 5),
+
+                            const Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "Humidity",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.w300,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                SizedBox(height: 3),
+                                Text(
+                                  "5:30 Am",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.w700,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                        Row(
+                          children: [
+                            Image.asset("assets/11.png", scale: 8),
+                            const SizedBox(width: 5),
+
+                            const Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "Humidity",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.w300,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                SizedBox(height: 3),
+                                Text(
+                                  "5:30 Am",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.w700,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ],
                     ),
                   ],
                 ),
