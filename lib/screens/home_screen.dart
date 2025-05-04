@@ -99,7 +99,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            "📍${state.weather.country}",
+                            "📍${state.weather.areaName }, ${state.weather.country}",
                             style: TextStyle(
                               fontWeight: FontWeight.w300,
                               color: Colors.white,
@@ -107,7 +107,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           ),
                           SizedBox(height: 8),
                           Text(
-                            "Good Morning, User",
+                            "Good ${state.weather.runtimeType}, User",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               color: Colors.white,
