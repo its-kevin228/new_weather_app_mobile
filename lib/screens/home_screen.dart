@@ -19,7 +19,7 @@ class HomeScreen extends StatelessWidget {
         ),
       ),
       body: Padding(
-        padding: const EdgeInsets.fromLTRB(40, 1.2 * kToolbarHeight, 40, 20),
+        padding: const EdgeInsets.fromLTRB(40, 0.5 * kToolbarHeight, 40, 20),
         child: SizedBox(
           height: MediaQuery.of(context).size.height,
           child: Stack(
@@ -186,14 +186,14 @@ class HomeScreen extends StatelessWidget {
                       children: [
                         Row(
                           children: [
-                            Image.asset("assets/11.png", scale: 8),
+                            Image.asset("assets/13.png", scale: 8),
                             const SizedBox(width: 5),
 
                             const Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
-                                  "Humidity",
+                                  "Temp Max",
                                   style: TextStyle(
                                     fontWeight: FontWeight.w300,
                                     color: Colors.white,
@@ -201,7 +201,7 @@ class HomeScreen extends StatelessWidget {
                                 ),
                                 SizedBox(height: 3),
                                 Text(
-                                  "5:30 Am",
+                                  "13 °C",
                                   style: TextStyle(
                                     fontWeight: FontWeight.w700,
                                     color: Colors.white,
@@ -213,14 +213,14 @@ class HomeScreen extends StatelessWidget {
                         ),
                         Row(
                           children: [
-                            Image.asset("assets/11.png", scale: 8),
+                            Image.asset("assets/12.png", scale: 8),
                             const SizedBox(width: 5),
 
                             const Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
-                                  "Humidity",
+                                  "Temp Min",
                                   style: TextStyle(
                                     fontWeight: FontWeight.w300,
                                     color: Colors.white,
@@ -228,7 +228,7 @@ class HomeScreen extends StatelessWidget {
                                 ),
                                 SizedBox(height: 3),
                                 Text(
-                                  "5:30 Am",
+                                  "12 °C",
                                   style: TextStyle(
                                     fontWeight: FontWeight.w700,
                                     color: Colors.white,
