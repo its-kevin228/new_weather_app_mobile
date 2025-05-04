@@ -54,7 +54,37 @@ class HomeScreen extends StatelessWidget {
                   decoration: BoxDecoration(color: Colors.orangeAccent),
                 ),
               ),
-              BackdropFilter(filter: ImageFilter.blur(sigmaX: 100.0, sigmaY: 100.0)),
+              BackdropFilter(
+                filter: ImageFilter.blur(sigmaX: 100.0, sigmaY: 100.0),
+                child: Container(
+                  decoration: BoxDecoration(color: Colors.transparent),
+                ),
+              ),
+              SizedBox(
+                height: MediaQuery.of(context).size.height,
+                width: MediaQuery.of(context).size.width,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "🗺️Camp-GP",
+                      style: TextStyle(
+                        fontWeight: FontWeight.w300,
+                        color: Colors.white,
+                      ),
+                    ),
+                    SizedBox(height: 8),
+                    Text(
+                      "Good Morning, User",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                        fontSize: 25,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
